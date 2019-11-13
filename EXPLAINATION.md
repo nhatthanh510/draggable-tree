@@ -1,17 +1,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Folder Structure
-/common     : Including common variables, helpers functions, components
-/components : Including classes or functions which take props and render UI
-/containers : Including components which handle application data (logic, fetching) and pass props down to components to render
-/services   : Including files which using to fetch data from external API
-/store      : Including folders/files related to redux flow
-    - /tree (a feature or part of APP)
-        - /reducer  : Handling updatereducer of a feature ( this is a part of root reducer)
-        - /saga     : Including function (using middleware redux-saga) which handle side effect in Redux ( Another popular lib is redux-thunk)
-        - /action   : Define action creator 
-        - /selector : Define functions which get data from redux store
-        - /type     : Define type contanst name
+
+- common     : Including common variables, helpers functions, components
+- components : Including classes or functions which take props and render UI
+- containers : Including components which handle application data (logic, fetching) and pass props down to components to render
+- services   : Including files which using to fetch data from external API
+- store      : Including folders/files related to redux flow
+     - tree (a feature or part of APP)
+     - reducer  : Handling updatereducer of a feature ( this is a part of root reducer)
+     - saga     : Including function (using middleware redux-saga) which handle side effect in Redux ( Another popular lib is redux-thunk)
+      - action   : Define action creator 
+      - selector : Define functions which get data from redux store
+      - type     : Define type contanst name
 
     index.js : configuration to Init app with redux 
     reducers.js : Root reducer of the APP
